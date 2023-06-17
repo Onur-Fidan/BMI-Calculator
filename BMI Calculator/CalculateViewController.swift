@@ -55,17 +55,7 @@ class CalculateViewController: UIViewController {
         calculatorBMI.calculateBMI(height: height, weight: weight)
         performSegue(withIdentifier: Constans.goToResult, sender: self)
         
-//        let firestoreDatabase = Firestore.firestore()
-//        
-//        var firestoreReference : DocumentReference? = nil
-//        
-//        let firestoreBMI = ["postedBy": Auth.auth().currentUser!.email!, "date" : FieldValue.serverTimestamp(), "advice" : result.adviceLabel.text!] as [String : Any]
-//        
-//        firestoreReference = firestoreDatabase.collection("BMI").addDocument(data: firestoreBMI as [String : Any], completion: { error in
-//            if error != nil {
-//                self.makeAlert(title: "Error!", message: error?.localizedDescription ?? "Error")
-//            }
-//        })
+
         
         
         
